@@ -3,63 +3,75 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio Page</title>
+        <link rel="stylesheet" type="text/css" href='styles.css'/>
     </head>
     <body>
-        <header>
-                <h1><strong>Beck Haywood</strong></h1>
+        <header class='page-header'>
+            <h1><strong>Beck Haywood</strong></h1>
+            <nav>
+                <a href='https://github.com/Beck-Haywood'>Github</a>
+                <a href='https://www.linkedin.com/in/beck-haywood-47073818a/'>Linkedin  </a>
+                <a href="mailto:haywoodbeck12@gmail.com">Email me</a>
+                <a href="#">Resume</a>
+            </nav>
         </header>
+        <hr>
         <main>
-            <article>
-                <h2>A little about me:</h2>
-                <pre>
-    I grew up in Alaska and from a young age I took interest in robotics.
-    High school robotics introduced me into programming, and that's where
-    my drive to become a software engineer started. I am currently attending
-    Make School and my graduating year is 2021.
-                </pre>
-            </article>
-            <figure>
-                    <img src='face.JPG' alt="Beck Headshot" height="350" width="350">
-            </figure>
             <section>
-                <h3>Skills</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Django</li>
-                    <li>NodeJS</li>
-                    <li>Basic HTML and CSS</li>
-                </ul>
+                <figure class='portrait'>
+                        <img src='face.JPG' alt="Beck Headshot" height="350" width="350">
+                </figure>
+        
+                <div class='container'>
+                    <h3>A little about me:</h3>
+                    <p>
+                        I grew up in Alaska and from a young age I took interest in robotics.
+                        High school robotics introduced me into programming, and that's where
+                        my drive to become a software engineer started. I am currently attending
+                        Make School and my graduating year is 2021.
+                    </p>
+                </div>
+                <div class='container'>
+                    <h3>Education</h3>
+                    <ul>
+                        <li>East Anchorage Highschool 2019</li>
+                        <li>Make School 2019-2021</li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Django</li>
+                        <li>NodeJS</li>
+                        <li>Flask</li>
+                        <li>Basic HTML and CSS</li>
+                    </ul>
+                </div>
             </section>
-            <section>
-                <h3>Education</h3>
-                <p>Graduated highschool 2019 and currently attending Make School 2019-2021</p>
-            </section>
-            <article>
                 <hgroup>
-                    <h2>Projects</h2>
-                    <h3>League Profiles</h3>
+                    <h3>Projects</h3>
+                    <h4>League Profiles</h4>
                 </hgroup>
                     <p>This project connects gamers that play the popular <abbr title="Multiplayer Online Battle Arena">MOBA</abbr> League Of Legends.</p> 
                     <p>The website includes ranked stat tracking, a page for users to contact other users to play together, and a highlight uploading system so they can show off their plays they are exited about.</p>
-                    <br>
                     This website is live @ <a href='https://league-profiles.herokuapp.com/'>Link</a>
             </article>
                 <p><strong>More personal projects soon to come!</strong></p>
         </main>
+        <hr>
         <footer>
             <div class="container">
-                <h1>Feel free to contact me!</h1>
+                <h3>Feel free to contact me!</h1>
                 <input type="text" id="name" placeholder="Enter name" required="required" />
+                <br>
                 <input type="email" id="email" placeholder="Enter email" required="required" />
+                <br>
+                <textarea name="message" id="message" required="required" placeholder="Message"></textarea> 
+                <br>
+                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
             </div>
-            <textarea name="message" id="message" required="required" placeholder="Message"></textarea> 
-            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
-            <h3>Reach me at:</h3>
-            <nav>
-            <a href='https://github.com/Beck-Haywood'>Github!</a>
-            <a href='https://www.linkedin.com/in/beck-haywood-47073818a/'>Linkedin!</a>
-            <a href="mailto:haywoodbeck12@gmail.com">Email me</a>
-            </nav>
         </footer>
     </body>
 </html>
