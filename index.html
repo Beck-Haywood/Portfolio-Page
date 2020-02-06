@@ -2,26 +2,39 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width,
+        initial-scale=1.0, maximum-scale=1.0'>
+
         <title>Portfolio Page</title>
         <link rel="stylesheet" type="text/css" href='styles.css'/>
     </head>
     <body>
-        <header class='page-header'>
-            <h1><strong>Beck Haywood</strong></h1>
-            <nav>
-                <a href='https://github.com/Beck-Haywood'>Github</a>
-                <a href='https://www.linkedin.com/in/beck-haywood-47073818a/'>Linkedin  </a>
-                <a href="mailto:haywoodbeck12@gmail.com">Email me</a>
-                <a href="#">Resume</a>
-            </nav>
-        </header>
-        <hr>
-        <main>
-            <section>
-                <figure class='portrait'>
-                        <img src='face.JPG' alt="Beck Headshot" height="350" width="350">
-                </figure>
-        
+        <div class="wrapper">
+            <header class='page-header'>
+                <h1><strong>Beck Haywood</strong></h1>
+                <nav>
+                    <a href="https://github.com/Beck-Haywood">
+                        <img src="git.png" alt="githublogo" style="width:42px;height:42px;border:0;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/beck-haywood-47073818a/">
+                        <img src="linkedin.png" alt="linkedinlogo" style="width:42px;height:42px;border:0;">
+                    </a>
+                    <a href="mailto:haywoodbeck12@gmail.com">
+                        <img src="mail.png" alt="maillogo" style="width:55px;height:42px;border:0;">
+                    </a>
+                    <a href="#">
+                            <img src="resume.png" alt="resume" style="width:55px;height:42px;border:0;">
+                    </a>
+                    <!-- <a href='https://github.com/Beck-Haywood'>Github</a> -->
+                    <!-- <a href='https://www.linkedin.com/in/beck-haywood-47073818a/'>Linkedin  </a> -->
+                    <!-- <a href="mailto:haywoodbeck12@gmail.com">Email me</a> -->
+                    <!-- <a href="#">Resume</a> -->
+                </nav>
+            </header>
+            <div class='portrait'>
+                <img src='face.JPG' alt="Beck Headshot" height="350" width="350">
+            </div>
+            <div class='content1'>
                 <div class='container'>
                     <h3>A little about me:</h3>
                     <p>
@@ -31,13 +44,18 @@
                         Make School and my graduating year is 2021.
                     </p>
                 </div>
+            </div>
+            <div class='content2'>
                 <div class='container'>
+                        
                     <h3>Education</h3>
                     <ul>
                         <li>East Anchorage Highschool 2019</li>
                         <li>Make School 2019-2021</li>
                     </ul>
                 </div>
+            </div>
+            <div class='content3'>
                 <div class="container">
                     <h3>Skills</h3>
                     <ul>
@@ -49,7 +67,8 @@
                         <li>Basic HTML and CSS</li>
                     </ul>
                 </div>
-            </section>
+            </div>
+            <div class='projects'>
                 <hgroup>
                     <h3>Projects</h3>
                     <h4>League Profiles</h4>
@@ -57,21 +76,22 @@
                     <p>This project connects gamers that play the popular <abbr title="Multiplayer Online Battle Arena">MOBA</abbr> League Of Legends.</p> 
                     <p>The website includes ranked stat tracking, a page for users to contact other users to play together, and a highlight uploading system so they can show off their plays they are exited about.</p>
                     This website is live @ <a href='https://league-profiles.herokuapp.com/'>Link</a>
-            </article>
-                <p><strong>More personal projects soon to come!</strong></p>
-        </main>
-        <hr>
-        <footer>
-            <div class="container">
-                <h3>Feel free to contact me!</h1>
-                <input type="text" id="name" placeholder="Enter name" required="required" />
-                <br>
-                <input type="email" id="email" placeholder="Enter email" required="required" />
-                <br>
-                <textarea name="message" id="message" required="required" placeholder="Message"></textarea> 
-                <br>
-                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
+                    <p><strong>More personal projects soon to come!</strong></p>
             </div>
-        </footer>
+            <div class='contact'>
+                <footer>
+                    <div class="container">
+                        <h3>Feel free to contact me!</h3>
+                        <input type="text" id="name" placeholder="Enter name" required="required" />
+                        <br>
+                        <input type="email" id="email" placeholder="Enter email" required="required" />
+                        <br>
+                        <textarea name="message" id="message" required="required" placeholder="Message"></textarea> 
+                        <br>
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>
